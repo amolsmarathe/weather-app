@@ -34,4 +34,4 @@ def greet(ip):    # we pass ip address instead of using get_ip()
 if __name__ == '__main__':
     import sys
     
-    print(greet(sys.argv[1]))    # WHAT IS THE REASON FOR THIS sys.argv[1]?? WHAT ARE WE PASSING TO greet() HERE???
+    print(greet(sys.argv[1]))
