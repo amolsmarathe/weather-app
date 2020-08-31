@@ -1,5 +1,5 @@
 from flask import Flask, request
-from weather_program import greet, get_ip
+from weather_app.weather_program import greet, get_ip
 import os
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ def main():
         ip = request.headers['X-Forwarded-For']
     else:
         ip = get_ip()
-    
+
     return greet(ip)
 
 

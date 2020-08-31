@@ -1,7 +1,10 @@
 #!/bin/bash
 
-source venv/bin/activate
-export FLASK_APP="app.py"
+if [[ -e venv ]]; then
+    source venv/bin/activate
+fi
+
+export FLASK_APP="weather_app/app.py"
 export FLASK_DEBUG=1
 export DEPLOY=local
 
